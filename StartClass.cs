@@ -11,6 +11,24 @@ namespace ConsoleApp1
     {
         public static void Main(string[] args)
         {
+            //string nimi = "Python";
+            //alamprog.Tere(nimi);
+
+            //int a = 14;
+            //int b = 12;
+            //int vastus=alamprog.Korruta(a, b);
+            //Console.WriteLine(vastus);
+            //Console.WriteLine(alamprog.Korruta(a, b));
+
+            //Console.WriteLine("Mitmest arvust leiate keskmise arvu?");
+            //int n = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Keskmine arv: {0}", alamprog.Keskmine(n));
+
+            //alamprog.Kass();
+
+            alamprog.nzvezda();
+
+
             /*Random rnd = new Random();
             int N = rnd.Next(-100, 100);
             int M = rnd.Next(-100, 100);
@@ -45,6 +63,7 @@ namespace ConsoleApp1
                     pikkus = N - M;
                 }
             }*/
+
             /*Random rnd = new Random();
             for (int i = 0; i < 10; i++)
             {
@@ -91,10 +110,12 @@ namespace ConsoleApp1
                 }
                 Console.WriteLine(arv);
             }*/
+
             /*Console.BackgroundColor = ConsoleColor.Green
             Console.WriteLine("Tere tulemast\nMis on sinu nimi?");
             string eesnimi = Console.ReadLine();
             Console.WriteLine("Tere " + eesnimi);*/
+
             /*Console.WriteLine("Arv1: ");
             int arv1 =int.Parse(Console.ReadLine());
             Console.WriteLine("Arv2: ");
@@ -110,6 +131,7 @@ namespace ConsoleApp1
                 Console.WriteLine("Arvude {0} ja {1} summa võrdub {2}", arv1, arv2, arv1 - arv2);
             }
             */
+
             /*if (eesnimi.ToLower() == "juku")
             {
                 Console.WriteLine("Tule minu juurde külla!\nKui vana sa oled?");
@@ -139,6 +161,7 @@ namespace ConsoleApp1
             {
                 Console.WriteLine("Täna mind kodus pole!");
             }*/
+
             /*Console.WriteLine("Sisesta esimene nimi: ");
             string nimi1 = Console.ReadLine();
             Console.WriteLine("Sisesta teine nimi: ");
@@ -155,6 +178,7 @@ namespace ConsoleApp1
             {
                 Console.WriteLine("Te ei ole M ja A");
             }*/
+
             /*Console.WriteLine("Sisestage ruumi laius:");
             int laius = int.Parse(Console.ReadLine());
             Console.WriteLine("Sisestage ruumi pikkus:");
@@ -170,6 +194,7 @@ namespace ConsoleApp1
                 int hind = rm * maksab;
                 Console.WriteLine("Põranda asendamise maksumus: {0}\nHind koos 30% allahindlusega võrdub:{1}",hind,hind*0.7);
             }*/
+
             /*Console.WriteLine("Arv 1:");
             int arv1 = int.Parse(Console.ReadLine());
             Console.WriteLine("Arv 2:");
@@ -180,8 +205,8 @@ namespace ConsoleApp1
             int arv4 = int.Parse(Console.ReadLine());
             Console.WriteLine("Arv 5:");
             int arv5 = int.Parse(Console.ReadLine());
-            Console.ReadKey();
             Console.WriteLine("Summa: {0}\nAritmeetiline keskmine: {1}\nKorrutamise summa:{2}",arv1+arv2+arv3+arv4+arv5,(arv1+arv2+arv3+arv4+arv5)/5,arv1*arv2*arv3*arv4*arv5);*/
+
             /*while (true)
             {
                 Console.WriteLine("Osta elevant!");
@@ -191,15 +216,17 @@ namespace ConsoleApp1
                     break;
                 }
             }*/
-            Random rnd = new Random();
+
+            /*Random rnd = new Random();
             int R = rnd.Next(0, 30);
             Console.WriteLine("Arvake ära number (0-30)");
-            int V = int.Parse(Console.ReadLine());
-            for (int i = 0; i < 6; i++)
+            for (int i = 0; i < 5; i++)
             {
+                int V = int.Parse(Console.ReadLine());
                 if (V == R)
                 {
                     Console.WriteLine("Õige!");
+                    break;
                 }
                 else if (V < R)
                 {
@@ -209,7 +236,11 @@ namespace ConsoleApp1
                 {
                     Console.WriteLine("Teie poolt arvutatud number on väiksem kui {0}", V);
                 }
-            }
+            }*/
+
+
+
+            Console.ReadKey();
         }
     }
 }

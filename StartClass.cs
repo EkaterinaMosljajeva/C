@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,6 +12,79 @@ namespace ConsoleApp1
     {
         public static void Main(string[] args)
         {
+            ConsoleKeyInfo nupp = new ConsoleKeyInfo();
+            do
+            {
+                Console.WriteLine("Vajuta Backspace");
+                nupp=Console.ReadKey();
+            } while (nupp.Key!=ConsoleKey.Backspace);
+
+            /*Dictionary<int, string> dic = new Dictionary<int, string>(5);
+            dic.Add(1, "Üks");
+            dic.Add(2, "Kaks");
+            dic[3] = "Kolm";
+            dic[4] = "Neli";
+            dic[5] = "Viis";
+            foreach (KeyValuePair<int,string> keyValue in dic)
+            {
+                Console.WriteLine(keyValue.Key + "-" + keyValue.Value);
+            }*/
+
+            /*Dictionary<int, Inimene> opilased = new Dictionary<int, Inimene>(3);
+            //List<Inimene> list = new List<Inimene>();
+            Inimene inimene = new Inimene();
+            inimene.Nimi = "Mati";
+            inimene.Vanus = 65;
+            Inimene inimene1 = new Inimene();
+            inimene1.Nimi = "Mati";
+            inimene1.Vanus = 43;
+            //list.Add(inimene);
+            //list.Add(new Inimene() { Nimi = "Kati" });
+            opilased.Add(1,inimene);
+            opilased.Add(2, inimene1);
+            opilased.Add(3, new Inimene() { Nimi="Marina", Vanus=100});
+
+            foreach (Inimene item in opilased.Values)
+            {
+                Console.WriteLine(item.Nimi);
+            }
+
+            foreach (KeyValuePair<int,Inimene> item in opilased)
+            {
+                Console.WriteLine(item.Key + ": " + item.Value.Nimi);
+            }*/
+
+
+
+
+
+
+            /*ArrayList arrayList = new ArrayList();
+            arrayList.Add("Esimene");
+            arrayList.Add("Teine");
+            arrayList.Add("Kolmas");
+            if (arrayList.Contains("Teine"))
+            {
+                Console.WriteLine("Sõna Teine on olemas");
+                Console.WriteLine("Teine asub kohal {0}",arrayList.IndexOf("Teine")+1);
+            }
+            else
+            {
+                Console.WriteLine("Otsitav sõna puudub");
+            }
+            Console.WriteLine("Kokku järjendis on " + arrayList.Count + " elements");
+            arrayList.Insert(3, "Neljas");
+            arrayList.Insert(4, "Viies");
+            arrayList.Sort();
+            foreach (string item in arrayList)
+            {
+                Console.Write(item + ", ");
+            }
+            arrayList.RemoveAt(0);
+            arrayList.Remove("Viies");
+            arrayList.Clear();*/
+
+
             //string nimi = "Python";
             //alamprog.Tere(nimi);
 
@@ -26,7 +100,7 @@ namespace ConsoleApp1
 
             //alamprog.Kass();
 
-            alamprog.nzvezda();
+            //alamprog.nzvezda();
 
 
             /*Random rnd = new Random();

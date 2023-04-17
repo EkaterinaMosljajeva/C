@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,7 +11,8 @@ namespace ConsoleApp1
     {
         public static void nzvezda()
         {
-            Console.WriteLine("Kordade arv: ");
+            
+            Console.Write("Kordade arv: ");
             int n = int.Parse(Console.ReadLine());
             int[] stars = new int[n];
             for (int i = 0; i < n; i++)
